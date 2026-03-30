@@ -24,43 +24,58 @@
 
     <link rel="stylesheet" href="/resurse/css/general.css" type="text/css"/>
     <link rel="stylesheet" href="/resurse/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="/resurse/css/nav.css" type="text/css"/>
+    <link rel="stylesheet" href="/resurse/css/print.css" type="text/css" media="print"/>
 </head>
 <body>
     
     <header class="area-header zone-box" style="border-top: none;">
         <h1>AeroLux Jets</h1>
         <nav>
-            <ul class="meniu-principal">
+            <input type="checkbox" id="ch-menu" />
+            <label id="hamburger" for="ch-menu">
+                <div class="hamburger-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </label>
+            <ul class="meniu">
                 <li>
-                    <div class="meniu-item">
-                        <span class="imag-icon"><i class="fa-solid fa-house"></i></span>
-                        <span class="text-icon">Acasă</span>
+                    <div class="text-icon">Acasă</div>
+                    <div class="imag-icon">
+                        <span class="fas fa-house"></span>
                     </div>
-                    <ul>
-                        <li><a href="#flota">Flotă</a></li>
-                        <li><a href="#performante">Performanțe și Eficiență</a></li>
-                        <li><a href="#evenimente">Evenimente</a></li>
+                    <ul class="submeniu">
+                        <li><a href="/#flota">Flotă</a></li>
+                        <li><a href="/#performante">Performanțe</a></li>
+                        <li><a href="/#evenimente">Evenimente</a></li>
                     </ul>
                 </li>
-                
                 <li>
-                    <a href="" class="meniu-item">
-                        <span class="imag-icon"><i class="fa-solid fa-plane"></i></span>
-                        <span class="text-icon">FlyShop</span>
+                    <div class="text-icon">FlyShop</div>
+                    <div class="imag-icon">
+                        <span class="fas fa-plane"></span>
+                    </div>
+                    <ul class="submeniu">
+                        <li><a href="/shop#statice">Private Jets</a></li>
+                        <li><a href="/shop#dinamice">Licitații</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/servicii">
+                        <div class="text-icon">Servicii</div>
+                        <div class="imag-icon">
+                            <span class="fas fa-list"></span>
+                        </div>
                     </a>
                 </li>
-                
                 <li>
-                    <a href="" class="meniu-item">
-                        <span class="imag-icon"><i class="fa-solid fa-list"></i></span>
-                        <span class="text-icon">Servicii</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#alte-linkuri" class="meniu-item">
-                        <span class="imag-icon"><i class="fa-solid fa-circle-info"></i></span>
-                        <span class="text-icon">Informații</span>
+                    <a href="/contact">
+                        <div class="text-icon">Contact</div>
+                        <div class="imag-icon">
+                            <span class="fas fa-circle-info"></span>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -287,10 +302,15 @@
         <p>
             <small>Copyright © <time datetime="2026-02-28">28 februarie 2026</time> AeroLux Jets. Toate drepturile rezervate.</small>
         </p>
+        <p id="banner-proiect">Acesta este un proiect școlar!</p>
     </footer>
 
     <a href="#" id="link-top" title="Înapoi la începutul paginii">
         <span>&#5123;</span>
     </a>
+    <div id="watermark">
+        <div>Neacsu</div>
+        <div>Andrei Stefan</div>
+    </div>
 </body>
 </html>

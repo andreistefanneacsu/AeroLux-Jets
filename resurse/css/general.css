@@ -348,7 +348,19 @@ math mo { color: var(--color-accent); font-weight: bold; padding: 0 0.5rem; }
     h1 { font-size: 2rem; }
     h2 { font-size: 1.5rem; }
     
-    * {
+    /* Kill animations globally EXCEPT nav (hamburger + axe-drop need them) */
+    *:not(nav):not(nav *) {
         animation: none !important;
+    }
+    
+    /* Force the nav to stand out from the white zone-box background */
+    .area-header {
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .area-header nav {
+        background-color: #1c2331 !important;
+        border-radius: 0.75rem;
     }
 }

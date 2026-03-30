@@ -1,0 +1,16 @@
+{
+  "name": "aerolux-jets",
+  "version": "1.0.0",
+  "description": "Platformă web modernă pentru explorarea, prezentarea și vânzarea de avioane private, realizată cu Node.js și Express.",
+  "license": "ISC",
+  "author": "Andrei Stefan Neacsu",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "sass": "^1.98.0"
+  }
+}
