@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta name="description" content="Eroare sistem AeroLux Jets">
+    <title>AeroLux Jets - Eroare</title>
+    
+    <%- include("../fragmente/head.ejs") %>
+</head>
+<body>
+    <%- include("../fragmente/header.ejs") %>
+    
+    <main class="area-zone8 zone-box" style="grid-column: span 4; text-align: center; padding: 4rem 1rem;">
+        <div id="err-coloane">
+            <div id="err-imag">
+                <img src="<%- locals.imagine %>" alt="Imagine Eroare" style="max-width: 600px; margin-bottom: 2rem;">
+            </div>
+            <section>
+                <h2 style="color: #d4af37; font-size: 2.2rem; margin-bottom: 1rem;"><%- locals.titlu %></h2>
+                
+                <p style="font-size: 1.2rem; line-height: 1.6;"><strong><%- locals.text %></strong></p>
+                
+                <br><br>
+                
+                <a href="/" style="font-weight: bold; text-decoration: none; font-size: 1.1rem; background-color: #0a192f; color: white; padding: 12px 24px; border-radius: 8px;">
+                    Întoarce-te la Flotă (Acasă)
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

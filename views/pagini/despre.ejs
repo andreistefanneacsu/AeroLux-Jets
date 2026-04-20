@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>AeroLux Jets - Povestea Noastră & Echipa</title>
+    <meta name="description" content="Află istoria AeroLux Jets și fă cunoștință cu echipa de management care conduce aviația de lux.">
+    <meta name="keywords" content="istoric AeroLux, echipa management, aviație privată, conducere AeroLux">
+
+    <%- include('../fragmente/head.ejs') %>
+    <style>
+        .grid-echipa {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .membru-echipa {
+            text-align: center;
+            background: #f9f9f9;
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .membru-echipa:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .membru-echipa img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--color-accent, #c6a87c);
+            margin-bottom: 1.5rem;
+        }
+        .membru-echipa h4 {
+            margin-bottom: 0.2rem;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        .membru-echipa .functie {
+            color: var(--color-accent, #c6a87c);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        .membru-echipa .descriere-rol {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+        .echipa-categorie {
+            width: 100%;
+            margin: 4rem 0 2rem 0;
+            color: #222;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <%- include('../fragmente/header.ejs') %>
+
+    <main class="area-zone8 zone-box" style="grid-column: span 4; padding: 3rem;">
+        
+        <section id="istoric-firma">
+            <h2 style="color: var(--color-accent, #c6a87c); font-size: 2.5rem; margin-bottom: 1.5rem;">Istoricul AeroLux Jets</h2>
+            <div style="line-height: 1.8; font-size: 1.1rem;">
+                <p>Fondată în 2026 de Andrei Ștefan Neacșu, <strong>AeroLux Jets</strong> a început ca o viziune îndrăzneață: transformarea zborului privat dintr-un simplu mijloc de transport într-o experiență de lifestyle absolut.</p>
+                <p>Totul a pornit de la o singură aeronavă <em>Cessna Citation</em> operată dintr-un hangar mic din București. În doar trei ani, prin seriozitate și atenție obsesivă la detalii, am reușit să ne extindem flota, devenind principalul partener pentru zboruri charter VIP în Europa de Est.</p>
+                <p>Astăzi, gestionăm o flotă diversificată și oferim consultanță pentru achiziții la nivel global, rămânând fideli motto-ului nostru: <q>Cerul nu este limita, ci punctul de plecare.</q></p>
+            </div>
+        </section>
+
+        <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #ddd;">
+
+        <section id="prezentare-video">
+            <h2 style="margin-bottom: 1rem;">Experiența la Bord</h2>
+            <p style="margin-bottom: 2rem;">Vizionați materialul nostru de prezentare pentru a înțelege standardele de confort AeroLux.</p>
+            
+            <div style="text-align: center;">
+                <video controls preload="metadata" poster="/resurse/imagini/poster-video.jpg" class="media-element" style="width: 80%; min-width: 320px; max-width: 800px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <source src="/resurse/video/prezentare.mp4" type="video/mp4">
+                    <track src="/resurse/vtt/subtitrari_ro.vtt" kind="subtitles" srclang="ro" label="Română" default>
+                    Browserul dumneavoastră nu suportă tag-ul video.
+                </video>
+            </div>
+        </section>
+
+        <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #ddd;">
+
+        <section id="echipa-management">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1rem; text-align: center;">Echipa de Management</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #555; margin-bottom: 3rem;">Experții care transformă fiecare zbor și tranzacție într-o capodoperă a aviației private.</p>
+
+            <h3 class="echipa-categorie">1. Conducerea Centrală (C-Suite)</h3>
+            <div class="grid-echipa">
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/andrei-neacsu.png" alt="Andrei Ștefan Neacșu">
+                    <h4>Andrei Ștefan Neacșu</h4>
+                    <p class="functie">Chief Executive Officer (CEO)</p>
+                    <p class="descriere-rol">Viziune strategică, parteneriate globale și dezvoltarea cotei de piață.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/darius-neacsu.png" alt="Dariu Neacșu">
+                    <h4>Dariu Gabriel Neacșu</h4>
+                    <p class="functie">Chief Financial Officer (CFO)</p>
+                    <p class="descriere-rol">Gestionează fluxul de numerar, finanțările pentru achiziții și conformitatea fiscală.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/lucian-dragomir.png" alt="Lucian Dragomir">
+                    <h4>Lucian Dragomir</h4>
+                    <p class="functie">Chief Operating Officer (COO)</p>
+                    <p class="descriere-rol">Puntea între vânzări și operațiuni, asigurând utilizarea eficientă a flotei.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/razvan-marinescu.png" alt="Răzvan Marinescu">
+                    <h4>Răzvan Marinescu</h4>
+                    <p class="functie">Chief Marketing Officer (CMO)</p>
+                    <p class="descriere-rol">Responsabilă de branding-ul de lux și generarea de clienți potențiali.</p>
+                </div>
+            </div>
+
+            <h3 class="echipa-categorie">2. Divizia Charter (Operațională)</h3>
+            <div class="grid-echipa">
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/marius-stan.png" alt="Marius Stan">
+                    <h4>Marius Stan</h4>
+                    <p class="functie">Director of Operations (DO)</p>
+                    <p class="descriere-rol">Responsabil legal pentru siguranța zborului în fața autorităților (AOC).</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/radu-ionescu.png" alt="Radu Ionescu">
+                    <h4>Radu Ionescu</h4>
+                    <p class="functie">Chief Pilot</p>
+                    <p class="descriere-rol">Gestionează echipa de piloți, antrenamentele și standardele de zbor.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/alexandru-dinu.png" alt="Alexandru Dinu">
+                    <h4>Alexandru Dinu</h4>
+                    <p class="functie">Flight Operations Manager</p>
+                    <p class="descriere-rol">Coordonează dispeceratul, planificarea rutelor și permisele de survol.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/diana-cazacu.png" alt="Diana Cazacu">
+                    <h4>Diana Cazacu</h4>
+                    <p class="functie">Charter Sales Manager</p>
+                    <p class="descriere-rol">Brokeraj, închirierea orelor de zbor și relația cu clienții recurenți.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/sofia-matei.png" alt="Sofia Matei">
+                    <h4>Sofia Matei</h4>
+                    <p class="functie">Customer Experience Lead</p>
+                    <p class="descriere-rol">Gestionează serviciile de concierge la bord și catering-ul VIP.</p>
+                </div>
+            </div>
+
+            <h3 class="echipa-categorie">3. Divizia Sales & Brokerage</h3>
+            <div class="grid-echipa">
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/tudor-minea.png" alt="Tudor Minea">
+                    <h4>Tudor Minea</h4>
+                    <p class="functie">VP of Aircraft Sales</p>
+                    <p class="descriere-rol">Conduce divizia de achiziții și vânzări de aeronave globale.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/cristian-lupu.png" alt="Cristian Lupu">
+                    <h4>Cristian Lupu</h4>
+                    <p class="functie">Aircraft Acquisition Manager</p>
+                    <p class="descriere-rol">Identifică avioane off-market și publice pentru inventar sau clienți.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/bogdan-florea.png" alt="Bogdan Florea">
+                    <h4>Bogdan Florea</h4>
+                    <p class="functie">Technical Sales Engineer</p>
+                    <p class="descriere-rol">Expert tehnic, evaluează jurnalele și execută inspecții PPI.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/ana-voicu.png" alt="Ana Maria Voicu">
+                    <h4>Ana Maria Voicu</h4>
+                    <p class="functie">Legal & Escrow Officer</p>
+                    <p class="descriere-rol">Gestionează contractele complexe și transferul de proprietate.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/stefan-petrescu.png" alt="Ștefan Petrescu">
+                    <h4>Ștefan Petrescu</h4>
+                    <p class="functie">Broker Relations Manager</p>
+                    <p class="descriere-rol">Menține legătura cu brokerii internaționali pentru tranzacții.</p>
+                </div>
+            </div>
+
+            <h3 class="echipa-categorie">4. Departamente Suport & Servicii</h3>
+            <div class="grid-echipa">
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/elena-popescu.png" alt="Elena Popescu">
+                    <h4>Elena Popescu</h4>
+                    <p class="functie">Head of Maintenance (CAMO)</p>
+                    <p class="descriere-rol">Garantează navigabilitatea flotei charter și a inventarului de vânzări.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/corina-vlad.png" alt="Corina Vlad">
+                    <h4>Corina Vlad</h4>
+                    <p class="functie">HR & Recruitment Director</p>
+                    <p class="descriere-rol">Angajează echipaje de elită și personal specializat în industria de lux.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/maria-dumitrescu.png" alt="Maria Dumitrescu">
+                    <h4>Maria Dumitrescu</h4>
+                    <p class="functie">Chief Legal & Compliance</p>
+                    <p class="descriere-rol">Navighează reglementările de aviație și protecția datelor clienților HNWI.</p>
+                </div>
+                <div class="membru-echipa">
+                    <img src="/resurse/imagini/echipa/mihai-sandu.png" alt="Mihai Sandu">
+                    <h4>Mihai Sandu</h4>
+                    <p class="functie">IT & Cybersecurity Director</p>
+                    <p class="descriere-rol">Protejează confidențialitatea tranzacțiilor și a itinerariilor de zbor.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <%- include('../fragmente/footer.ejs') %>
+
+</body>
+</html>

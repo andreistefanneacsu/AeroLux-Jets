@@ -1,0 +1,31 @@
+{
+    "cale_baza": "resurse/imagini/erori",
+    "eroare_default":{
+        "titlu":"Eroare Sistem",
+        "text": "A survenit o eroare pe serverele AeroLux. Vă rugăm să ne contactați dacă problema persistă.",
+        "imagine":"default.png"
+    },
+    "info_erori": [
+        {
+            "identificator":404,
+            "status":true,
+            "titlu":"404 - Destinație Inexistentă",
+            "text": "Pagina solicitată nu a putut fi găsită. Zborul a fost deviat!",
+            "imagine":"404.png"
+        },
+        {
+            "identificator":403,
+            "status":true,
+            "titlu":"403 - Acces Restricționat",
+            "text": "Nu aveți permisiunea (clearance-ul) de a accesa acest director.",
+            "imagine":"403.png"
+        },
+        {
+            "identificator":400,
+            "status":true,
+            "titlu":"400 - Bad Request",
+            "text": "Cerere invalidă către turnul de control.",
+            "imagine":"400.png"
+        }
+    ]
+}
