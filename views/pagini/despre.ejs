@@ -7,6 +7,7 @@
 
     <%- include('../fragmente/head.ejs') %>
     <style>
+        /* Stiluri specifice pentru secțiunea echipă */
         .grid-echipa {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -33,7 +34,7 @@
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--color-accent, #c6a87c);
+            border: 3px solid var(--color-accent, #c6a87c); /* Fallback color in caz ca variabila lipseste */
             margin-bottom: 1.5rem;
         }
         .membru-echipa h4 {
@@ -224,6 +225,22 @@
                 </div>
             </div>
 
+        </section>
+                <section id="sectiune-galerie-animata-container" style="text-align: center; margin-top: 5rem;">
+            <h2>Prezentare Dinamică Flotă</h2>
+            <p class="text-muted">Așteptați pe imagine pentru a o opri.</p>
+            
+            <div id="sectiune-galerie-animata">
+                <% if (locals.galerieAnimata && locals.galerieAnimata.length > 0) { %>
+                    <% galerieAnimata.forEach((img) => { %>
+                        <figure>
+                            <img src="<%= galerie.cale_galerie + img.cale_fisier %>" alt="<%= img.alt %>">
+                        </figure>
+                    <% }); %>
+                <% } else { %>
+                    <p style="color: red;">Eroare: Nu s-au trimis imagini animate din server!</p>
+                <% } %>
+            </div>
         </section>
 
     </main>

@@ -1,0 +1,179 @@
+{
+  "cale_galerie": "/resurse/imagini/galerie/",
+  "imagini": [
+    {
+      "cale_fisier": "jet-1.jpg",
+      "titlu": "Embraer Phenom 300E",
+      "alt": "Avion ușor pe pistă însorită",
+      "text_descriere": "Cel mai bine vândut jet ușor. Perfect pentru un weekend în Ibiza.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"],
+      "licenta": {
+        "nume_autor": "Aviation Photo",
+        "link_autor": "https://www.aviationphoto.com"
+      }
+    },
+    {
+      "cale_fisier": "jet-2.jpg",
+      "titlu": "Cessna Citation CJ4",
+      "alt": "Jet privat deasupra mării",
+      "text_descriere": "Agilitate maximă pentru aterizări pe aeroporturile de pe Coasta de Azur.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-3.jpg",
+      "titlu": "Elicopter Airbus H160",
+      "alt": "Elicopter VIP deasupra apei",
+      "text_descriere": "Transfer VIP direct de la aeroport pe puntea iahtului tău.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-4.jpg",
+      "titlu": "Pilatus PC-12 NGX",
+      "alt": "Aeronava elvețiană turboprop",
+      "text_descriere": "Aterizează oriunde. Ideal pentru insule greu accesibile din Grecia.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-5.jpg",
+      "titlu": "HondaJet Elite S",
+      "alt": "Avion HondaJet design inovator",
+      "text_descriere": "Inovație japoneză. Zboruri silențioase pentru city break-uri în Europa.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-6.jpg",
+      "titlu": "Bombardier Challenger 350",
+      "alt": "Interior luminos jet",
+      "text_descriere": "Recomandarea numărul 1 pentru întâlnirile de afaceri din primăvară.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-7.jpg",
+      "titlu": "Dassault Falcon 2000LXS",
+      "alt": "Avion Dassault in zbor",
+      "text_descriere": "Eficiență franceză pentru rutele aglomerate de deasupra Mediteranei.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-8.jpg",
+      "titlu": "Elicopter Bell 429 VIP",
+      "alt": "Elicopter de lux interior",
+      "text_descriere": "Interior din piele, zbor panoramic spre vilele de pe litoral.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-9.jpg",
+      "titlu": "Embraer Praetor 500",
+      "alt": "Jet Praetor 500",
+      "text_descriere": "Tehnologie fly-by-wire pentru zboruri extrem de line vara.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-10.jpg",
+      "titlu": "Cessna Citation Latitude",
+      "alt": "Cessna Latitude interior",
+      "text_descriere": "Spațiu generos în cabină, perfect pentru familii în vacanță.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-11.jpg",
+      "titlu": "Gulfstream G280",
+      "alt": "Avion Gulfstream zbor scurt",
+      "text_descriere": "Performanță și statut. Cel mai bun mid-size jet pentru vară.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+    {
+      "cale_fisier": "jet-12.jpg",
+      "titlu": "Interior Lounge VIP",
+      "alt": "Scaune avion private jet",
+      "text_descriere": "Sistem de divertisment 4K și Wi-Fi rapid la 12.000 de metri.",
+      "luni": ["aprilie", "mai", "iunie", "iulie", "august", "septembrie"]
+    },
+
+
+    {
+      "cale_fisier": "jet-13.jpg",
+      "titlu": "Bombardier Global 7500",
+      "alt": "Avion mare pe zapada",
+      "text_descriere": "Zboruri non-stop din Europa spre plajele din Bali sau Maldive.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-14.jpg",
+      "titlu": "Gulfstream G650ER",
+      "alt": "Gulfstream noaptea",
+      "text_descriere": "Regizorul evadărilor de iarnă. Autonomie record pentru rute transoceanice.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-15.jpg",
+      "titlu": "Boeing Business Jet (BBJ)",
+      "alt": "Interior tip apartament in avion",
+      "text_descriere": "Un palat zburător. Capacitate mare pentru întreaga familie de sărbători.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-16.jpg",
+      "titlu": "Dassault Falcon 8X",
+      "alt": "Jet falcon pe cer innorat",
+      "text_descriere": "Aterizează în siguranță pe piste scurte, acoperite de zăpadă.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-17.jpg",
+      "titlu": "Embraer Praetor 600",
+      "alt": "Zbor deasupra muntilor",
+      "text_descriere": "Capacitate impresionantă pentru bagajele și echipamentele tale de schi.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-18.jpg",
+      "titlu": "Dormitor VIP la bord",
+      "alt": "Pat dublu in avion privat",
+      "text_descriere": "Dormi profund și trezește-te direct pe continentul american.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-19.jpg",
+      "titlu": "Gulfstream G700",
+      "alt": "Aeronava VIP flagship",
+      "text_descriere": "Noul nostru flagship. Ferestre panoramice pentru cele mai frumoase aurore boreale.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-20.jpg",
+      "titlu": "Cessna Citation Longitude",
+      "alt": "Cessna deasupra norilor",
+      "text_descriere": "Silențios și fiabil. Alegerea perfectă pentru weekendurile în Alpii Elvețieni.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-21.jpg",
+      "titlu": "Airbus ACJ320neo",
+      "alt": "Avion masiv de lux",
+      "text_descriere": "Atmosferă de super-yacht. Ideal pentru turnee de iarnă sau corporații.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-22.jpg",
+      "titlu": "Dassault Falcon 10X",
+      "alt": "Falcon 10x exterior",
+      "text_descriere": "Cabina supremă. Cel mai larg și luminos spațiu din clasa sa.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-23.jpg",
+      "titlu": "Bombardier Challenger 650",
+      "alt": "Bombardier zburand pe viscol",
+      "text_descriere": "Fiabilitate legendară în condiții meteo aspre de iarnă.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    },
+    {
+      "cale_fisier": "jet-24.jpg",
+      "titlu": "Cina la 40.000 de picioare",
+      "alt": "Mancare gourmet in avion",
+      "text_descriere": "Servicii de catering cu stele Michelin pentru masa de Crăciun în aer.",
+      "luni": ["octombrie", "noiembrie", "decembrie", "ianuarie", "februarie", "martie"]
+    }
+  ]
+}

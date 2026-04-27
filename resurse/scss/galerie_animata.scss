@@ -1,0 +1,97 @@
+$nr-imagini: 6 !default; 
+
+$procent: 100 / $nr-imagini;
+
+#sectiune-galerie-animata {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 4rem auto;
+    overflow: hidden;
+    background-color: var(--color-primary, #0a192f);
+    
+    border: 20px solid transparent;
+    border-image: repeating-linear-gradient(
+        45deg,
+        var(--color-accent, #d4af37) 0px, var(--color-accent, #d4af37) 20px,
+        var(--color-primary, #0a192f) 20px, var(--color-primary, #0a192f) 40px
+    ) 20;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+
+    @media screen and (max-width: 1000px) {
+        display: none !important;
+    }
+
+    &:hover figure {
+        animation-play-state: paused;
+    }
+
+    figure {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        margin: 0;
+        opacity: 0; 
+        
+        animation-name: glisareDiagonala;
+        animation-duration: $nr-imagini * 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @for $i from 1 through 12 {
+        figure:nth-of-type(#{$i}) {
+            animation-delay: ($i - 1) * 4s;
+        }
+    }
+}
+
+@keyframes glisareDiagonala {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+        z-index: 10;
+    }
+    #{ $procent * 0.4 }% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    #{ $procent * 0.6 }% {
+        opacity: 1;
+        transform: translate(50px, 0);
+        z-index: 10;
+    }
+    #{ $procent * 0.75 }% {
+        opacity: 0.9;
+        transform: translate(-30px, 0);
+        z-index: 10;
+    }
+    #{ $procent }% {
+        opacity: 0;
+        transform: translate(100%, 100%); 
+        z-index: 10;
+    }
+    #{ $procent + 0.1 }% {
+        opacity: 0;
+        transform: translate(0, 0);
+        z-index: 1;
+    }
+    #{ 100 - ($procent * 0.25) }% {
+        opacity: 0;
+        transform: translate(0, 0);
+        z-index: 5;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        z-index: 5;
+    }
+}

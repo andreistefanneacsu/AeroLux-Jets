@@ -1,0 +1,116 @@
+#sectiune-galerie-animata {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 4rem auto;
+  overflow: hidden;
+  background-color: var(--color-primary, #0a192f);
+  border: 20px solid transparent;
+  border-image: repeating-linear-gradient(45deg, var(--color-accent, #d4af37) 0px, var(--color-accent, #d4af37) 20px, var(--color-primary, #0a192f) 20px, var(--color-primary, #0a192f) 40px) 20;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 1000px) {
+  #sectiune-galerie-animata {
+    display: none !important;
+  }
+}
+#sectiune-galerie-animata:hover figure {
+  animation-play-state: paused;
+}
+#sectiune-galerie-animata figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  animation-name: glisareDiagonala;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+#sectiune-galerie-animata figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#sectiune-galerie-animata figure:nth-of-type(1) {
+  animation-delay: 0s;
+}
+#sectiune-galerie-animata figure:nth-of-type(2) {
+  animation-delay: 4s;
+}
+#sectiune-galerie-animata figure:nth-of-type(3) {
+  animation-delay: 8s;
+}
+#sectiune-galerie-animata figure:nth-of-type(4) {
+  animation-delay: 12s;
+}
+#sectiune-galerie-animata figure:nth-of-type(5) {
+  animation-delay: 16s;
+}
+#sectiune-galerie-animata figure:nth-of-type(6) {
+  animation-delay: 20s;
+}
+#sectiune-galerie-animata figure:nth-of-type(7) {
+  animation-delay: 24s;
+}
+#sectiune-galerie-animata figure:nth-of-type(8) {
+  animation-delay: 28s;
+}
+#sectiune-galerie-animata figure:nth-of-type(9) {
+  animation-delay: 32s;
+}
+#sectiune-galerie-animata figure:nth-of-type(10) {
+  animation-delay: 36s;
+}
+#sectiune-galerie-animata figure:nth-of-type(11) {
+  animation-delay: 40s;
+}
+#sectiune-galerie-animata figure:nth-of-type(12) {
+  animation-delay: 44s;
+}
+
+@keyframes glisareDiagonala {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    z-index: 10;
+  }
+  6.6666666667% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(50px, 0);
+    z-index: 10;
+  }
+  12.5% {
+    opacity: 0.9;
+    transform: translate(-30px, 0);
+    z-index: 10;
+  }
+  16.6666666667% {
+    opacity: 0;
+    transform: translate(100%, 100%);
+    z-index: 10;
+  }
+  16.7666666667% {
+    opacity: 0;
+    transform: translate(0, 0);
+    z-index: 1;
+  }
+  95.8333333333% {
+    opacity: 0;
+    transform: translate(0, 0);
+    z-index: 5;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    z-index: 5;
+  }
+}

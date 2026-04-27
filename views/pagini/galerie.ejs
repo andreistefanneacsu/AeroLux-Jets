@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>AeroLux Jets - Galeria Flotei</title>
+    <meta name="description" content="Descoperiți galeria foto a flotei noastre de private jets de lux.">
+    
+    <%- include('../fragmente/head.ejs') %>
+</head>
+<body>
+    
+    <%- include('../fragmente/header.ejs') %>
+
+    <main class="area-zone8 zone-box" style="grid-column: span 4; padding: 2rem;">
+        
+        <section id="sectiune-galerie">
+            <a href="/" class="btn btn-outline-primary mb-4" style="text-decoration: none; font-weight: bold;">
+                <i class="fa-solid fa-arrow-left"></i> Înapoi la Flotă
+            </a>
+            
+            <h2 style="color: var(--color-accent); margin-bottom: 2rem; border-bottom: 2px solid var(--color-accent); padding-bottom: 0.5rem;">
+                Galeria Flotei AeroLux
+            </h2>
+
+            <div class="grid-galerie">
+                <% locals.galerie.imagini.forEach(function(img) { %>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="<%= locals.galerie.cale_galerie %>mic-<%= img.cale_fisier %>">
+                            <source media="(max-width: 1000px)" srcset="<%= locals.galerie.cale_galerie %>mediu-<%= img.cale_fisier %>">
+                            <img src="<%= locals.galerie.cale_galerie %><%= img.cale_fisier %>" alt="<%= img.alt || img.titlu %>" title="<%= img.text_descriere %>">
+                        </picture>
+                        <figcaption>
+                            <%= img.text_descriere %>
+                            <% if (img.licenta) { %>
+                                <br><small style="font-size: 0.75rem; opacity: 0.8;">
+                                    Credit: <a href="<%= img.licenta.link_autor %>" target="_blank" style="color: inherit;"><%= img.licenta.nume_autor %></a> (CC-BY)
+                                </small>
+                            <% } %>
+                        </figcaption>
+                    </figure>
+                <% }) %>
+            </div>
+        </section>
+
+    </main>
+
+    <%- include('../fragmente/footer.ejs') %>
+
+</body>
+</html>

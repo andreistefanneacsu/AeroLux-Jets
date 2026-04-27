@@ -1,0 +1,71 @@
+// =========================================================
+// CUSTOMIZARE BOOTSTRAP - ETAPA 5
+// =========================================================
+
+// 1. Familia de font implicită (Cerința 6)
+$font-family-sans-serif: 'Lexend', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// 2. Dimensiuni de ecran diferite pentru mediu și mari (Cerința 3)
+// Modificăm pragurile (breakpoints) implicite
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 850px,   // Prag custom pentru ecrane medii (implicit e 768px)
+  lg: 1150px,  // Prag custom pentru ecrane mari (implicit e 992px)
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// 3. Culori de brand și Teme (Cerința 1)
+// Definim culorile noastre pentru schemele cromatice
+$navy-dark: #0a192f;
+$gold-accent: #d4af37;
+$soft-white: #f4f4f4;
+
+// Modificăm culorile de fundal pentru temele "light" și "dark"
+$light: $soft-white;
+$dark: $navy-dark;
+
+// 4. Culori de font (Cerința 2)
+// Schimbăm culoarea textului pe butoanele primare în auriu
+$btn-primary-color: $gold-accent; 
+
+// 5. Dimensiunea razelor de border (Cerința 4)
+$border-radius: 1.5rem; // Rotunjire foarte pronunțată pentru un aspect modern
+$border-radius-sm: 0.5rem;
+
+// 6. Dimensiunea literelor headingurilor (Cerința 5)
+$h1-font-size: 3.5rem;
+$h2-font-size: 2.8rem;
+$h3-font-size: 2rem;
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem
+);
+
+// 7. Variabile extra (Cerința 7)
+$navbar-padding-y: 1.5rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 820px,
+  lg: 1100px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background-color: var(--color-bg-body, white);
+    font-family: $font-family-sans-serif;
+}
+
+.zone-box {
+    box-sizing: border-box;
+}
+
+.btn-back {
+    @extend .btn;
+    @extend .btn-outline-primary;
+    margin-bottom: 20px;
+}
